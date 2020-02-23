@@ -1,0 +1,103 @@
+————————— For User Login ——————————
+Host: https://api.myjson.com/bins/login
+Request Type : POST
+
+Content-Type: application/json
+
+Request Json :
+{
+    "email": "jishan010@gmail.com",
+    "password": "abc@12356"
+}
+Response Json :
+{
+    "success": true  
+}
+
+—————— For User Registration ------------ 
+
+Host: https://api.myjson.com/bins/registration
+Request Type : POST
+
+Content-Type: application/json
+
+Request Json :
+{
+"name": "Jishan",
+"adsress": "at thakurwadi post narpad , dahanu",
+"city": "dahanu",
+"pincode": "401601",
+"mobile": "9970655757",
+"email": "jishan010@gmail.com",
+"gst_no" : "GST123456"
+ }
+Response Json :
+{
+    "success": true  
+}
+
+
+
+
+—————— For final order ————————————
+
+Host: https://api.myjson.com/bins/final_order
+Request Type : POST
+
+Content-Type: application/json
+Request :
+
+{"total_amount":300,"order_placed":"12/02/2020","products":[{"product_id":1,"product_name":"medicine first","price":150.0,"quantity":1},{"product_id":2,"product_name":"medicine seconde","price":120.0,"quantity":2},{"product_id":3,"product_name":"medicine third","price":110.0,"quantity":5},{"product_id":4,"product_name":"medicine fourth","price":120.0,"quantity":2},{"product_id":5,"product_name":"medicine fifth","price":520.0,"quantity":10},{"product_id":6,"product_name":"medicine fifth","price":520.0,"quantity":10},{"product_id":10,"product_name":"medicine fifth","price":520.0,"quantity":10}]}
+
+
+Response :
+{
+    "success": true  
+}
+
+
+—————————  For  home Screen Productt  list ———————
+
+Host: https://api.myjson.com/bins/products?page=2
+Request Type : GET
+Response : 
+
+{
+ "page": 2,
+    "per_page": 10,
+    "total": 30,
+    "total_pages": 3,
+
+"products" : [
+{"product_id":"xyz123456788","product_image":"https://avatars0.githubusercontent.com/u/1?v=4","product_name":"jishan","product_price":400.0,"discount_off_percent":20,"delivery_charge":100.0},{"product_id":"akakaz123456788","product_image":"https://avatars0.githubusercontent.com/u/2?v=4","product_name":"ansari","product_price":100.0,"discount_off_percent":30,"delivery_charge":50.0},{"product_id":"xyz123456788","product_image":"https://avatars0.githubusercontent.com/u/3?v=4","product_name":"yoyo","product_price":450.0,"discount_off_percent":0,"delivery_charge":100.0},{"product_id":"xyz123456788","product_image":"","product_name":"medicine","product_price":3000.0,"discount_off_percent":20,"delivery_charge":100.0},{"product_id":"xyz123456788","product_image":"https://avatars0.githubusercontent.com/u/1?v=4","product_name":"abcjaj","product_price":200.0,"discount_off_percent":0,"delivery_charge":100.0},{"product_id":"xyz123456788","product_image":"","product_name":"abcjaj","product_price":40.0,"discount_off_percent":5,"delivery_charge":100.0},{"product_id":"xyz123456788","product_image":"https://avatars0.githubusercontent.com/u/1?v=4","product_name":"abcjaj","product_price":50.0,"discount_off_percent":0,"delivery_charge":100.0},{"product_id":"xyz123456788","product_image":"https://avatars0.githubusercontent.com/u/1?v=4","product_name":"abcjaj","product_price":400.0,"discount_off_percent":0,"delivery_charge":100.0},{"product_id":"xyz123456788","product_image":"https://avatars0.githubusercontent.com/u/1?v=4","product_name":"abcjaj","product_price":800.0,"discount_off_percent":0,"delivery_charge":100.0},{"product_id":"xyz123456788","product_image":"https://avatars0.githubusercontent.com/u/1?v=4","product_name":"abcjaj","product_price":900.0,"discount_off_percent":0,"delivery_charge":100.0},{"product_id":"xyz123456788","product_image":"https://avatars0.githubusercontent.com/u/1?v=4","product_name":"abcjaj","product_price":35.0,"discount_off_percent":0,"delivery_charge":100.0}
+
+]
+
+}
+
+——————  For single product for specific search result ————
+ost: https://api.myjson.com/bins/products/jishan
+Request Type : GET
+Response : 
+{
+"product_id":"xyz123456788",
+"product_image":"https://avatars0.githubusercontent.com/u/1?v=4",
+"product_name":"jishan",
+"product_price":400.0,
+"discount_off_percent":20,
+"delivery_charge":100.0
+}
+
+———————————— For previous order list ----------------------
+Host :  https://api.myjson.com/bins/wwyds
+Request Type : GET
+Response :
+[{"order_id":"xyz123456788","total_amount":400.0,"order_date":"12/02/2020"},{"order_id":"ABC123456788","total_amount":3200.0,"order_date":"12/02/2019"},{"order_id":"ABDADAD123456788","total_amount":9200.0,"order_date":"12/02/2012"},{"order_id":"XKAK123456788","total_amount":2300.0,"order_date":"12/02/2008"},{"order_id":"KOOA123456788","total_amount":300.0,"order_date":"12/02/2013"},{"order_id":"MKA123456788","total_amount":5200.0,"order_date":"12/02/2014”}]
+
+
+———————— For Previous single order details —————————-----------
+Host :  https://api.myjson.com/bins/s9034
+Request Type : GET
+Response :
+{"order_id":"ABC123456788","total_amount":300,"order_placed":"12/02/2020","products":[{"product_id":1,"product_name":"medicine first","price":150.0,"quantity":1},{"product_id":2,"product_name":"medicine seconde","price":120.0,"quantity":2},{"product_id":3,"product_name":"medicine third","price":110.0,"quantity":5},{"product_id":4,"product_name":"medicine fourth","price":120.0,"quantity":2},{"product_id":5,"product_name":"medicine fifth","price":520.0,"quantity":10},{"product_id":6,"product_name":"medicine fifth","price":520.0,"quantity":10},{"product_id":7,"product_name":"medicine fifth","price":520.0,"quantity":10},{"product_id":8,"product_name":"medicine fifth","price":520.0,"quantity":10},{"product_id":10,"product_name":"medicine fifth","price":520.0,"quantity":10}]}
+
